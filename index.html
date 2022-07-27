@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style.css"><!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link rel="stylesheet" type="text/css" href="indexPage_Responsive.css"><!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+<!-- body -->
+
+<body>
+<!------------------------------------------------ Navigation Section --------------------------------------------------->
+<section class="navigation-section">
+    <!-- Navigation Area -->
+    <nav class="navigation-bar">
+        <!--This div contains the logo and title of the page-->
+        <div class="music-player-title">
+            <div class="music-player-logo">
+                <img src="static\website_logo.svg">
+            </div>
+            <div class="music-player-name">
+                <h2>
+                    Soothing <br> <h3> Studio </h3>
+                </h2>
+            </div>
+        </div>
+        <!-- Favourites -->
+        <div class="favourites">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <!-- Search bar -->
+        <div class="search-bar">
+            <div>
+                <!-- Magnifying glass & Search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- Mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <!-- Notification Icon -->
+        <div class="notification-icon">
+            <img src="static\bell.svg"> Notifications
+        </div>
+        <!-- Profile picture icon -->
+        <div class="profile-picture-icon">
+            <img src="static\profile_picture.png">
+        </div>
+    </nav>
+</section>
+<!-- Navigation Section End -->
+
+</body>
+
+</html>
