@@ -1,0 +1,169 @@
+:root {
+	--background-image: url(media/background_image/2725544.jpg);
+	--music-themes-background-image: linear-gradient(
+		90deg,
+		#833ab4,
+		#fd1d1d,
+		#fcb045
+	)
+}
+body {
+	background-image: var(--background-image);
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
+}
+/* Removing Margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 1px;
+	color: white;
+}
+
+/* ------------------------------------------------- Navigation Section ---------------------------------------------- */
+
+/*For Changing Navigation Bar Font Color*/
+.navigation-bar h4, h6 {
+	color: white;
+}
+
+h1 {
+	color: white;
+}
+
+h2 {
+	color: white;
+}
+
+/*For Channging Space Between And Color Of Music Player Name*/
+.music-player-name > h3,h2 {
+	color: black;
+	margin-top: -5.5px;
+}
+.music-player-name > h3 {
+	color: black;
+	margin-top: -11px;
+}
+
+/* Removing all the styles from the links and formatting them white */
+a {
+	text-decoration: none;
+	color: white;
+}
+/* Navigation Bar */
+.navigation-bar {
+	height: 8vh;
+	width: auto;
+	background-image: linear-gradient(180deg, #959595, rgba(0, 0, 0, 0));
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	transition: all ease-in-out 1s; /* when the navbar loads, every property transits for 1s */
+	background-color: #00000054;
+}
+/* All the divs inside the navigation bar should be placed side by side*/
+.navigation-bar > div {
+	display: inline-block;
+}
+ /*Animation for the website logo *//**/
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* Music Player Logo Image */
+.music-player-logo img {
+	height: 50px;
+	width: 50px;
+	/*border-radius: 100%;*/
+	animation-name: rotating;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+/* Music Player Name */
+.music-player-name h4 {
+	color: rgb(80, 220, 255);
+}
+/* Music Player title and general description */
+.music-player-title > div {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* Search bar */
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+/* Changing the default style of the input area of search bar */
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+/* Search icon for input area, here using font awesome icon */
+.search-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* Mic icon for input, here using font awesome icon */
+.mic-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* Search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* Mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+
+/*If user click on search bar there is by default Blue Outline present there and removing that*/
+input:focus {
+	outline: none;
+}
+
+
+/* Notification icon image */
+.notification-icon img {
+	width: 40px;
+	height: 30px;
+}
+/* Profile picture */
+.profile-picture-icon img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+/* --------------------------------------------- Navigation Section End --------------------------------------------- */
