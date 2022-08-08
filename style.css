@@ -799,13 +799,10 @@ hr {
 	font-size: 20px;
 }
 
-.far fa-heart {
-	margin-bottom: 10px !important;
-}
-
 .right-content i {
 	transition: all ease-in-out 0.1s;
 }
+
 .right-content i:hover {
 	color: red;
 }
