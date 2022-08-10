@@ -63,7 +63,9 @@
         </div>
     </nav>
 
-     <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+<!----------------------------------------------------- Main Section ----------------------------------------------------------->
+    
+<!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
     <!-- I have separated these sections using the aside tag for each section -->
     <main>
         <!-- aside section 1 -->
@@ -106,10 +108,10 @@
             </section>
 
             <section id="playlist-section">
-
-                  <!-- now the playlist part begins -->
+            <!-- Playlist section -->
+            <!-- now the playlist part begins -->
             <div class="playlist-items">
-                <!-- playlist item -->
+                <!-- playlist item 1 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -142,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 2 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -175,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 3 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -208,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 4 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -241,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 5 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -274,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 6 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -307,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 7 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -340,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 8 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -373,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 9 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -406,7 +408,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 10 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -439,7 +441,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 11 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -472,7 +474,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- playlist item -->
+                <!-- playlist item 12 -->
                 <div class="playlist-item">
                     <div class="left">
                         <div>
@@ -507,8 +509,120 @@
                 </div>
             </div>
             </section>
+            <!-- Play list section end -->
+        </aside>
+
+        <!-- one aside section is complete -->
+        <!-- now the second aside section will start from here -->
+        <!-- the page is responsive. please try reducing the width of the page -->
+        <!-- the aside section will collapse and a "more button will be shown to you." -->
+        <!-- clicking on this more button, you will be shown the aside section 2  -->
+        <!-- its position will be absolute at lower resolutions -->
+        <!-- this is the label for that more button -->
+        <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+        <!-- this is that more button -->
+        <!-- and this is the check box. this will always be hidden -->
+        <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+        <!-- which will invoke the aside section 2 on lower resolutions -->
+        <input type="checkbox" id="more">
+        <!-- </div> -->
+        <aside class="aside section-right">
+
+            <!-- Similar artists section -->
+            <section id="similar-artists-section">
+            <!-- similar class will be applicable to both similar artists and recently played -->
+            <div class="similar">
+                <!-- section heading, which also contains the view all button -->
+                <div class="section-heading">
+                    <h1>Similar Artists</h1>
+                    <div class="view-all-button">
+                        View All
+                    </div>
+                </div>
+                <!-- list is the container for the contents of similar artists -->
+                <div class="list">
+                    <!-- item 1 -->
+                    <div class="list-item">
+                        <div>
+                            <img src="static\similar_artists\only_girl.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Only Girl
+                            </h5>
+                            <p class="author-name">
+                                Rihanna
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="list-item">
+                        <div>
+                            <img src="static\similar_artists\stay.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Stay
+                            </h5>
+                            <p class="author-name">
+                                Justin Beiber
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="list-item">
+                        <div>
+                            <img src="static\similar_artists\blank_space.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Blank Space
+                            </h5>
+                            <p class="author-name">
+                                Tyalor Swift
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Similar artists section end -->
+
         </aside>
     </main>
+    <!-------------------------------------------------- Main Section End --------------------------------------------------------->
 </section>
 
 </body>
